@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    display: flex;
+    height: 90vh;
+    background-color: rgba(92, 92, 228, 0.76);
+}
+.child-1{
+    border-radius: 0px 50% 50% 0%;
+    flex: 80%;
+    border-style: hidden double hidden hidden;
+    background-color: whitesmoke;
+}
+.child-1 .child-11{
+    width: 99%;
+    height: 99%;
+    border-radius: 0px 50% 50% 0%;
+    border-style: hidden double hidden hidden;
+}
+.child-content{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.child-content h1>span{
+    font-size: 50px;
+}
+
+.child-2{
+    flex: 48%;
+}
+.child-2{
+    display: flex;
+    flex-direction: column;
+}
+.blob{
+    margin-top: 17%;
+    margin-left: 17%;
+}
+.blob,.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child-2 .blob,.circle{
+   border-radius:28% 72% 42% 58% / 81% 44% 56% 19%  ;
+   border: 5px double #000 ;
+   width: 60%;
+   height: 60%;
+   animation: blobani 25s infinite 5s;
+}
+@keyframes blobani {
+    0%  {border-radius: 25% 75% 40% 60% / 80% 40% 60% 20%; background: radial-gradient(circle, rgb(226, 240, 146) , rgb(49, 62, 243))}
+    17% {border-radius: 44% 56% 70% 30% / 66% 23% 77% 34% ; background: radial-gradient(circle, rgb(243, 247, 243) , rgb(49, 62, 243))}
+    34% {border-radius: 44% 56% 57% 43% / 39% 78% 22% 61% ; background: radial-gradient(circle, rgb(247, 247, 177) , rgb(49, 62, 243))}
+    50% {border-radius: 70% 30% 31% 69% / 73% 21% 79% 27% ; background: radial-gradient(circle, rgb(241, 211, 155) , rgb(49, 62, 243))}
+    67% {border-radius: 44% 56% 57% 43% / 39% 78% 22% 61% ; background: radial-gradient(circle, rgb(247, 247, 177) , rgb(49, 62, 243))}
+    84% {border-radius: 44% 56% 70% 30% / 66% 23% 77% 34% ; background: radial-gradient(circle, rgb(243, 247, 243) , rgb(49, 62, 243))}
+    100%{border-radius: 25% 75% 40% 60% / 80% 40% 60% 20%; background: radial-gradient(circle, rgb(226, 240, 146) , rgb(49, 62, 243))}
+}
+.blob .circle{
+    width: 99%;
+    height: 99%;
+}
+.circle .incircle{
+    width: 99%;
+    height:99%;
+}
+.incircle{
+    animation: vlovani 25s infinite 5s;
+}
+@keyframes vlovani {
+    0%  {border-radius: 25% 75% 40% 60% / 80% 40% 60% 20%;}
+    17% {border-radius: 44% 56% 70% 30% / 66% 23% 77% 34%;}
+    34% {border-radius: 44% 56% 57% 43% / 39% 78% 22% 61%;}
+    50% {border-radius: 70% 30% 31% 69% / 73% 21% 79% 27%;}
+    67% {border-radius: 44% 56% 57% 43% / 39% 78% 22% 61%;}
+    84% {border-radius: 44% 56% 70% 30% / 66% 23% 77% 34%;}
+    100%{border-radius: 25% 75% 40% 60% / 80% 40% 60% 20%;}
+}
+/* .blob .circle, .circle .incircle{
+    aspect-ratio: 1;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    border: 5px double #000 ;
+} */
+
+.bg-color{
+    animation: bgcolor 25s infinite 5s;
+}
+@keyframes bgcolor{
+    0%   {background: radial-gradient(circle, rgb(226, 240, 146) , rgb(49, 62, 243))}
+    17%  {background: radial-gradient(circle, rgb(243, 247, 243) , rgb(49, 62, 243))}
+    34%  {background: radial-gradient(circle, rgb(247, 247, 177) , rgb(49, 62, 243))}
+    50%  {background: radial-gradient(circle, rgb(241, 211, 155) , rgb(49, 62, 243))}
+    67%  {background: radial-gradient(circle, rgb(247, 247, 177) , rgb(49, 62, 243))}
+    84%  {background: radial-gradient(circle, rgb(243, 247, 243) , rgb(49, 62, 243))}
+    100% {background: radial-gradient(circle, rgb(226, 240, 146) , rgb(49, 62, 243))}
+}
+
+ .blob>.circle>.incircle{
+    background-size: cover;
+}
