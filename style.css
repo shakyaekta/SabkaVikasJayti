@@ -82,12 +82,6 @@
     84% {border-radius: 44% 56% 70% 30% / 66% 23% 77% 34%;}
     100%{border-radius: 25% 75% 40% 60% / 80% 40% 60% 20%;}
 }
-/* .blob .circle, .circle .incircle{
-    aspect-ratio: 1;
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-    border: 5px double #000 ;
-} */
-
 .bg-color{
     animation: bgcolor 25s infinite 5s;
 }
