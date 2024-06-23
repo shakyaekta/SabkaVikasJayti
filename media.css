@@ -29,6 +29,30 @@
     .jaf{
         font-size: 24px !important;
     }
+    .about-parent,.child-2-about{
+        flex-direction: column;
+    }
+    .child-1-about,.child-2-about{
+        width: 100%;
+    }
+    .child-21-about{
+        width: 100% !important;
+        min-height: 200px;
+        max-height: fit-content;
+    }
+    .child-21-about>p{
+        margin: 5px;
+        padding: 5px 15px 5px 5px !important;
+    }
+    .child-22-about{
+        display: none;
+    }
+    .about-bg-logo img{
+        display: block !important;
+    }
+    .none{
+        display: none !important;
+    }
 }
 @media  screen and (min-width:601px) and (max-width:1080px) {
     .parent{
